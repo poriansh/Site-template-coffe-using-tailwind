@@ -18,6 +18,18 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
+    screens:{
+      sm: "576px",
+      // => @media (min-width: 640px) { ... }
+
+      md: "768px",
+      // => @media (min-width: 768px) { ... }
+
+      lg: "992px",
+      // => @media (min-width: 1024px) { ... }
+
+      xl: "1200px",
+    },
     extend: {
       colors: {
         brown: {
@@ -29,6 +41,9 @@ module.exports = {
       },
       borderRadius: {
         "4xl": "2rem",
+      },
+      spacing:{
+        30 :"7.5rem"
       },
     },
   },

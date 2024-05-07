@@ -34,7 +34,12 @@
     font-display: swap;
   }
   body {
-    background-image: url("../img/headerBgDesktop.png");
+    background-image: url("../img/headerBgDesktop.webp");
     background-repeat: no-repeat;
+  }
+}
+@layer utilities {
+  .container {
+    @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px];
   }
 }
