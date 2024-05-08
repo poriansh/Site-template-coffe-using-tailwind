@@ -56,8 +56,7 @@
 
     </svg>
     <!-- header -->
-    <header
-        class="hidden md:block lg:w-[90%] bg-black/50 w-[95%] mx-auto h-24 rounded-3xl fixed top-9 right-0 left-0 py-5 px-5 backdrop-blur-[6px]">
+    <header class="hidden md:block lg:w-[90%] bg-black/50 w-[95%] mx-auto h-24 rounded-3xl fixed top-9 right-0 left-0 py-5 px-5 backdrop-blur-[6px]">
         <!-- header-werraper -->
         <div class="flex justify-between h-full">
             <!-- nav -->
@@ -67,16 +66,14 @@
                     <img src="img/app-logo.png" alt="" />
                 </div>
                 <!-- menu -->
-                <ul
-                    class="flex lg:gap-9 lg:text-xl gap-4 text-gray-300 text-lg h-full child:leading-[56px] child-hover:text-orange-300 child:transition-all child:duration-200">
+                <ul class="flex lg:gap-9 lg:text-xl gap-4 text-gray-300 text-lg h-full child:leading-[56px] child-hover:text-orange-300 child:transition-all child:duration-200">
                     <li class="">
                         <a class="font-Dana-medium text-orange-200" href="">صفحه اصلی</a>
                     </li>
                     <li class="relative group">
                         <a href="">فروشگاه</a>
                         <!-- sub-menu -->
-                        <ul
-                            class="transition-all delay-75 duration-200  child-hover:text-orange-300 child:transition-all child:duration-400 child:ease-in child:w-max absolute invisible opacity-0 group-hover:opacity-100 group-hover:visible top-full shadow-light flex gap-4 flex-col py-[21px] px-6 w-52 text-zinc-700 dark:text-white text-base bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300">
+                        <ul class="transition-all delay-75 duration-200  child-hover:text-orange-300 child:transition-all child:duration-400 child:ease-in child:w-max absolute invisible opacity-0 group-hover:opacity-100 group-hover:visible top-full shadow-light flex gap-4 flex-col py-[21px] px-6 w-52 text-zinc-700 dark:text-white text-base bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300">
                             <li class="">
                                 <a class="" href="">قهوه ویژه</a>
                             </li>
@@ -114,14 +111,13 @@
             <!-- header-left -->
             <div class="flex gap-3 xl:gap-10  text-orange-200">
                 <!-- cart and dark-mood -->
-                <div class="flex gap-2.5 xl:gap-5 child:flex child:items-center child:cursor-pointer">
+                <div class="flex gap-2.5 xl:gap-5 child:flex child:items-center">
                     <div class="relative group">
-                        <svg class="w-8 h-8">
+                        <svg class="w-8 h-8 cursor-pointer">
                             <use href="#shoping-cart"></use>
                         </svg>
                         <!-- cart -->
-                        <div
-                            class="transition-all duration-200 delay-75 absolute invisible opacity-0 group-hover:opacity-100 group-hover:visible top-full left-0 shadow-light p-5 w-[400px] bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300">
+                        <div  class="transition-all duration-200 delay-75 absolute invisible opacity-0 group-hover:opacity-100 group-hover:visible top-full left-0 shadow-light p-5 w-[400px] bg-white dark:bg-zinc-700 rounded-2xl border-t-[3px] border-t-orange-300">
                             <!-- cart head -->
                             <div class="flex items-center justify-between font-Dana-medium text-xs text-orange-300">
                                 <span class="text-gray-300">1مورد </span>
@@ -133,21 +129,66 @@
                                 </a>
                             </div>
                             <!-- cart body -->
-                            <div>
-                                <img class="w-30 h-30 object-cover" src="img/products/p3.png" alt="">
-                                <div>
-                                    <h4>قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
-                                    <div>
+                            <div class="divide-y divide-gray-100 dark:divide-white/5 max-h-[330px] overflow-auto" id="cartbody">
+                                <div class="flex gap-2.5 py-5">
+                                    <img class="w-30 h-30 object-cover" src="img/products/p1.png" alt="">
+                                    <div class="flex flex-col justify-between">
+                                        <h4 class="text-zinc-700 dark:text-white font-Dana-medium text-base line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
                                         <div>
-                                            <span>14.500</span>
-                                            تومان تخفیف
-                                        </div>
-                                        <div>
-                                            <span>175,000 </span>
-                                            تومان
+                                            <div class="text-teal-600 dark:text-emerald-500 font-Dana-medium text-xs">
+                                                <span>14.500</span>
+                                                تومان تخفیف
+                                            </div>
+                                            <div class="text-zinc-700 dark:text-white text-sm">
+                                                <span class="font-Dana-bold text-xl">175,000 </span>
+                                                تومان
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="flex gap-2.5 py-5">
+                                    <img class="w-30 h-30 object-cover" src="img/products/p2.png" alt="">
+                                    <div class="flex flex-col justify-between">
+                                        <h4 class="text-zinc-700 dark:text-white font-Dana-medium text-base line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                        <div>
+                                            <div class="text-teal-600 dark:text-emerald-500 font-Dana-medium text-xs">
+                                                <span>14.500</span>
+                                                تومان تخفیف
+                                            </div>
+                                            <div class="text-zinc-700 dark:text-white text-sm">
+                                                <span class="font-Dana-bold text-xl">175,000 </span>
+                                                تومان
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-2.5 py-5">
+                                    <img class="w-30 h-30 object-cover" src="img/products/p3.png" alt="">
+                                    <div class="flex flex-col justify-between">
+                                        <h4 class="text-zinc-700 dark:text-white font-Dana-medium text-base line-clamp-2">قهوه اسپرسو بن مانو مدل پریسکا 250 گرمی</h4>
+                                        <div>
+                                            <div class="text-teal-600 dark:text-emerald-500 font-Dana-medium text-xs">
+                                                <span>14.500</span>
+                                                تومان تخفیف
+                                            </div>
+                                            <div class="text-zinc-700 dark:text-white text-sm">
+                                                <span class="font-Dana-bold text-xl">175,000 </span>
+                                                تومان
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <!-- cart bottom -->
+                            <div class="flex items-center justify-between pt-5 border-t border-gray-300 dark:border-white/10">
+                                <div>
+                                    <span class="text-gray-300 text-xs font-Dana-medium">مبلغ قابل پرداخت</span>
+                                    <h6 class="text-zinc-700 dark:text-white text-sm">
+                                        <span class="font-Dana-bold text-xl">350,000</span>
+                                        تومان
+                                    </h6>
+                                </div>
+                                <a class="bg-teal-600 dark:bg-emerald-500 text-white inline-flex text-xl items-center justify-center rounded-xl w-36 h-14" href="">ثبت سفارش</a>
                             </div>
                         </div>
                     </div>

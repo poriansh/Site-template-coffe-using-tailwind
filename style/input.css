@@ -37,6 +37,25 @@
     background-image: url("../img/headerBgDesktop.webp");
     background-repeat: no-repeat;
   }
+  #cartbody::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  #cartbody::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  #cartbody::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+
+
+  
 }
 @layer utilities {
   .container {
