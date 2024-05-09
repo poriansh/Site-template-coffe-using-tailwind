@@ -1895,16 +1895,12 @@ body {
   border-radius: 1.5rem;
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded-full {
-  border-radius: 9999px;
-}
-
 .rounded-\[100px\] {
   border-radius: 100px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .rounded-b {
@@ -2862,13 +2858,13 @@ body {
   }
 }
 
-.hover\:bg-orange-200\/10:hover {
-  background-color: rgb(254 215 170 / 0.1);
-}
-
 .hover\:bg-emerald-600:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(5 150 105 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-orange-200\/10:hover {
+  background-color: rgb(254 215 170 / 0.1);
 }
 
 .hover\:font-bold:hover {
