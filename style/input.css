@@ -61,4 +61,46 @@
   .container {
     @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px];
   }
+ 
+  
+  
+}
+
+@layer components{
+
+  #sub-menu-hover > li::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 0;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #FDBA74;
+    opacity: 0;
+
+
+  }
+  #sub-menu-hover > li {
+    @apply relative
+    
+  }
+  #sub-menu-hover > li:hover::before{
+    @apply opacity-100
+  }
+  .overlay{
+    @apply fixed inset-0 invisible opacity-0  bg-black/40 z-10 transition-all duration-200
+  }
+  .overlay--open{
+    @apply visible opacity-100 
+  }
+  .sub-menu{
+    @apply flex flex-col gap-3 max-h-6 transition-all duration-200  overflow-hidden
+  }
+  .sub-menu--open{
+   @apply max-h-[400px] ease-in text-orange-300
+  }
+  
 }

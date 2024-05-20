@@ -657,6 +657,63 @@ body {
   }
 }
 
+#sub-menu-hover > li::before{
+  content:'';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 0;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #FDBA74;
+  opacity: 0;
+}
+
+#sub-menu-hover > li {
+  position: relative;
+}
+
+#sub-menu-hover > li:hover::before {
+  opacity: 1;
+}
+
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  inset: 0px;
+  z-index: 10;
+  background-color: rgb(0 0 0 / 0.4);
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.overlay--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.sub-menu {
+  display: flex;
+  max-height: 1.5rem;
+  flex-direction: column;
+  gap: 0.75rem;
+  overflow: hidden;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.sub-menu--open {
+  max-height: 400px;
+  --tw-text-opacity: 1;
+  color: rgb(253 186 116 / var(--tw-text-opacity));
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -728,6 +785,14 @@ body {
   inset: -0.25rem;
 }
 
+.-right-64 {
+  right: -16rem;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -738,6 +803,10 @@ body {
 
 .right-0 {
   right: 0px;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .top-9 {
@@ -754,6 +823,10 @@ body {
 
 .isolation-auto {
   isolation: auto;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .float-start {
@@ -807,6 +880,10 @@ body {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .box-border {
@@ -975,6 +1052,10 @@ body {
   width: 1.5rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .w-8 {
   width: 2rem;
 }
@@ -985,6 +1066,10 @@ body {
 
 .w-\[400px\] {
   width: 400px;
+}
+
+.w-\[41px\] {
+  width: 41px;
 }
 
 .w-\[95\%\] {
@@ -1558,8 +1643,16 @@ body {
   gap: 0.75rem;
 }
 
+.gap-3\.5 {
+  gap: 0.875rem;
+}
+
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-9 {
@@ -1899,6 +1992,10 @@ body {
   border-radius: 100px;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
 }
@@ -2029,6 +2126,11 @@ body {
 
 .border-none {
   border-style: none;
+}
+
+.border-gray-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
 .border-gray-300 {
@@ -2183,6 +2285,21 @@ body {
   padding: 1.25rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2\.5 {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2198,9 +2315,24 @@ body {
   padding-right: 1.5rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .py-\[21px\] {
@@ -2208,18 +2340,24 @@ body {
   padding-bottom: 21px;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
-.px-1\.5 {
-  padding-left: 0.375rem;
-  padding-right: 0.375rem;
+.pr-2\.5 {
+  padding-right: 0.625rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -2419,6 +2557,11 @@ body {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-zinc-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 91 / var(--tw-text-opacity));
 }
 
 .text-zinc-700 {
@@ -2938,6 +3081,14 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+.child-hover\:pr-2 > *:hover {
+  padding-right: 0.5rem;
+}
+
+.child-hover\:pr-2\.5 > *:hover {
+  padding-right: 0.625rem;
+}
+
 .child-hover\:text-orange-300 > *:hover {
   --tw-text-opacity: 1;
   color: rgb(253 186 116 / var(--tw-text-opacity));
@@ -2945,6 +3096,10 @@ body {
 
 .dark\:block:is(.dark *) {
   display: block;
+}
+
+.dark\:inline-flex:is(.dark *) {
+  display: inline-flex;
 }
 
 .dark\:hidden:is(.dark *) {
@@ -3034,10 +3189,6 @@ body {
     width: 90%;
   }
 
-  .lg\:gap-9 {
-    gap: 2.25rem;
-  }
-
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -3061,14 +3212,8 @@ body {
     gap: 1.25rem;
   }
 
-  .xl\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .xl\:px-5 {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
+  .xl\:gap-9 {
+    gap: 2.25rem;
   }
 
   .xl\:px-4 {
