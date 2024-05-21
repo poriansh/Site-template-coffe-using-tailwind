@@ -67,8 +67,11 @@
 }
 
 @layer components{
+  .sub-menu-hover{
 
-  #sub-menu-hover > li::before{
+    @apply pr-7 flex flex-col gap-3 text-sm text-zinc-600 dark:text-white child-hover:text-orange-300 child:transition-all child:duration-200 child-hover:pr-2.5
+  }
+  .sub-menu-hover > li::before{
     content:'';
     position: absolute;
     top: 0;
@@ -83,11 +86,11 @@
 
 
   }
-  #sub-menu-hover > li {
+  .sub-menu-hover > li {
     @apply relative
     
   }
-  #sub-menu-hover > li:hover::before{
+  .sub-menu-hover > li:hover::before{
     @apply opacity-100
   }
   .overlay{
@@ -101,6 +104,9 @@
   }
   .sub-menu--open{
    @apply max-h-[400px] ease-in text-orange-300
+  }
+  .menu-mobail{
+    @apply py-2 px-2.5 rounded-md bg-orange-200/20 text-orange-300
   }
   
 }
