@@ -1,33 +1,50 @@
-const toggleThemeBtn = document.querySelectorAll("#toggle-theme");
-const navmobail = document.querySelector("#nav-mobail");
-const closenav = document.querySelector("#close-nav");
-const opennav = document.querySelector("#open-nav");
+const toggletheme = document.querySelectorAll("#toggletheme");
+const navmobail = document.querySelector(".nav-mobail");
 const submenumobail = document.querySelector(".sub-menu");
 const overlay = document.querySelector(".overlay");
+const cartmobail = document.querySelector(".cart-mobail");
 
 submenumobail.addEventListener("click", function (e) {
   e.currentTarget.classList.toggle("sub-menu--open");
   document.querySelector("#arrow--active").classList.toggle("rotate-180");
 });
+overlay.addEventListener("click", function(e){
+e.currentTarget.classList.remove('overlay--open')
+  if(cartmobail.classList.contains("cart-mobail--open")){
+
+    cartmobail.classList.remove("cart-mobail--open");
+
+  }else{
+    navmobail.classList.remove("nav-mobail--open");
+  }
+
+});
+
 closenav.addEventListener("click", Conditionnav);
-
 opennav.addEventListener("click", Conditionnav);
-
-overlay.addEventListener("click", Conditionnav);
-
 function Conditionnav() {
-  if (navmobail.classList.contains("-right-64")) {
-    navmobail.classList.remove("-right-64");
-    navmobail.classList.add("right-0");
-    overlay.classList.add("overlay--open");
-  } else {
-    navmobail.classList.add("-right-64");
-    navmobail.classList.remove("right-0");
+  if (navmobail.classList.contains("nav-mobail--open")) {
+    navmobail.classList.remove("nav-mobail--open");
     overlay.classList.remove("overlay--open");
+  } else {
+    navmobail.classList.add("nav-mobail--open");
+    overlay.classList.add("overlay--open");
   }
 }
 
-toggleThemeBtn.forEach(function (item) {
+opencart.addEventListener("click", Conditioncart);
+closecart.addEventListener("click", Conditioncart);
+function Conditioncart(){
+  if (cartmobail.classList.contains("cart-mobail--open")) {
+    cartmobail.classList.remove("cart-mobail--open");
+    overlay.classList.remove("overlay--open");
+  } else {
+    cartmobail.classList.add("cart-mobail--open");
+    overlay.classList.add("overlay--open");
+  }
+}
+
+toggletheme.forEach(function (item) {
   item.addEventListener("click", () => {
     if (localStorage.theme === "dark") {
       document.documentElement.classList.remove("dark");

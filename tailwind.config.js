@@ -18,7 +18,7 @@ module.exports = {
       center: true,
       padding: "1rem",
     },
-    screens:{
+    screens: {
       sm: "576px",
       // => @media (min-width: 640px) { ... }
 
@@ -42,8 +42,8 @@ module.exports = {
       borderRadius: {
         "4xl": "2rem",
       },
-      spacing:{
-        30 :"7.5rem"
+      spacing: {
+        30: "7.5rem",
       },
     },
   },
