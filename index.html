@@ -8,7 +8,7 @@
     <link rel="icon" href="img/fav-icon.png" type="imgage/png" />
 </head>
 
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
     <!-- icon -->
     <svg class="hidden">
         <symbol id="shoping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -123,9 +123,12 @@
             stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
         </symbol>
+        <symbol id="shape-home" width="100" height="22" viewBox="0 0 100 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 0C69 0 81 22 100 22L0 22C18.75 22 31 0 50 0Z" fill="currentColor"/>
+        </symbol>
     </svg>
     <!-- header -->
-    <header class="hidden md:block lg:w-[90%] bg-black/50 w-[95%] mx-auto h-24 rounded-3xl fixed top-9 right-0 left-0 py-5 px-5 backdrop-blur-[6px]">
+    <header class="hidden z-50 md:block lg:w-[90%] bg-black/50 w-[95%] mx-auto h-24 rounded-3xl fixed top-9 right-0 left-0 py-5 px-5 backdrop-blur-[6px]">
         <!-- header-werraper -->
         <div class="flex justify-between h-full">
             <!-- nav -->
@@ -308,7 +311,7 @@
             <div class="cart-mobail">
                 <div>
                     <!-- cart header -->
-                    <div class="flex justify-between items-center pb-5 border-b border-gray-300 dark:border-white/10">
+                    <div class="flex  justify-between items-center pb-5 border-b border-gray-300 dark:border-white/10">
                         <svg id="closecart" class="w-5 h-5 text-zinc-600 dark:text-white">
                             <use href="#close"></use>
                         </svg>
@@ -521,6 +524,32 @@
             </div>
         </div>
     </div>
+    <!-- main -->
+    <main>
+        <section class="home relative bg-home-mobail xs:aspect-[2/1] md:aspect-auto  md:bg-home-desktop bg-no-repeat bg-cover h-[200px] xs:h-auto md:min-h-screen  bg-[center_top]">
+            <div class="container overflow-y-hidden relative h-full md:min-h-screen flex items-center justify-end">
+                <div class="text-white">
+                    <h1 class="font-Moraba-bold text-2xl md:text-6xl/[62px]">قهوه عربیکا تانزانیا</h1>
+                    <h4 class="text-xl/[32px] md:text-5xl/[65px] font-Moraba mt-1">یک فنجان بالانس !</h4>
+                    <span class="block w-[100px] h-[1px] md:h-0.5 bg-orange-300 my-3"></span>
+                    <p class="text-xs md:text-2xl max-w-[201px] md:max-w-[460px]">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
+                </div>
+                <div class="circel circel-1">
+                    <div class="circel circel-2">
+                        <div class="circel circel-3"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cursor-pointer z-20  border-2 border-orange-300 rounded-full w-[30px] h-[30px] absolute bottom-0 left-0 right-0 mx-auto text-zinc-800 dark:text-white flex items-center justify-center translate-y-1/2">
+                <svg class="w-5 h-5">
+                    <use href="#arrow-down"></use>
+                </svg>
+            </div>
+            <svg class=" w-[100px] z-10 h-[22px] absolute bottom-0 left-0 right-0 mx-auto text-white dark:text-zinc-800">
+                <use href="#shape-home"></use>
+            </svg>
+        </section>
+    </main>
     <div class="overlay"></div>
     <script src="script/app.js"></script>
 </body>

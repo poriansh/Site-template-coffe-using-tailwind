@@ -16,19 +16,26 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: "1rem",
+      padding:{
+        default:"1rem",
+        lg:"0.625rem",
+      },
     },
     screens: {
-      sm: "576px",
+
+      'xs':'480px',
+
+      'sm': '640px',
       // => @media (min-width: 640px) { ... }
 
-      md: "768px",
+      'md': '768px',
       // => @media (min-width: 768px) { ... }
 
-      lg: "992px",
+      'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      xl: "1200px",
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
     },
     extend: {
       colors: {
@@ -45,6 +52,11 @@ module.exports = {
       spacing: {
         30: "7.5rem",
       },
+      backgroundImage:{
+        "home-mobail":"url(../img/headerBgDesktop.webp)",
+        "home-desktop":"url(../img/headerBgMobile.webp)"
+
+      }
     },
   },
   plugins: [

@@ -33,41 +33,31 @@
     src: url("../font/Morabba/woff2/Morabba-Bold.woff2") format("woff2");
     font-display: swap;
   }
-  body {
-    background-image: url("../img/headerBgDesktop.webp");
-    background-repeat: no-repeat;
-  }
   #cartbody::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   /* Track */
   #cartbody::-webkit-scrollbar-track {
     background: transparent;
   }
-  
+
   /* Handle */
   #cartbody::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 1rem;
     cursor: pointer;
   }
-
-
-
-  
 }
 @layer utilities {
-
 }
 
-@layer components{
-  .sub-menu-hover{
-
-    @apply pr-7 flex flex-col gap-3 text-sm text-zinc-600 dark:text-white child-hover:text-orange-300 child:transition-all child:duration-200 child-hover:pr-2.5
+@layer components {
+  .sub-menu-hover {
+    @apply pr-7 flex flex-col gap-3 text-sm text-zinc-600 dark:text-white child-hover:text-orange-300 child:transition-all child:duration-200 child-hover:pr-2.5;
   }
-  .sub-menu-hover > li::before{
-    content:'';
+  .sub-menu-hover > li::before {
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -76,44 +66,57 @@
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #FDBA74;
+    background-color: #fdba74;
     opacity: 0;
-
-
   }
   .sub-menu-hover > li {
-    @apply relative
+    @apply relative;
+  }
+  .sub-menu-hover > li:hover::before {
+    @apply opacity-100;
+  }
+  .overlay {
+    @apply fixed inset-0 invisible opacity-0  bg-black/40 z-10 transition-all duration-200 md:hidden;
+  }
+  .overlay--open {
+    @apply visible opacity-100;
+  }
+  .sub-menu {
+    @apply flex flex-col gap-3 max-h-6 transition-all duration-200  overflow-hidden;
+  }
+  .sub-menu--open {
+    @apply max-h-[400px] ease-in text-orange-300;
+  }
+  .menu-mobail {
+    @apply py-2 px-2.5 rounded-md bg-orange-200/20 text-orange-300;
+  }
+  .cart-mobail {
+    @apply fixed z-30 flex flex-col justify-between w-64 transition-all -left-64 duration-200 top-0 bottom-0 bg-white dark:bg-zinc-700  px-4 pt-5 pb-8;
+  }
+  .cart-mobail--open {
+    @apply left-0;
+  }
+  .nav-mobail {
+    @apply overflow-y-auto fixed z-30 w-64 transition-all -right-64 duration-200 top-0 bottom-0 bg-white dark:bg-zinc-700  px-4 py-3;
+  }
+  .nav-mobail--open {
+    @apply right-0;
+  }
+  .circel {
+    @apply rounded-full hidden sm:flex items-center justify-center ;
     
   }
-  .sub-menu-hover > li:hover::before{
-    @apply opacity-100
+  .circel-1 {
+    @apply w-[203px] h-[203px] border border-white/25 absolute bottom-0 left-0 right-0 mx-auto translate-y-1/2;
+    
+    
   }
-  .overlay{
-    @apply fixed inset-0 invisible opacity-0  bg-black/40 z-10 transition-all duration-200 md:hidden
+  .circel-2 {
+    @apply w-[145px] h-[145px] border border-white/50 ;
+   
   }
-  .overlay--open{
-    @apply visible opacity-100 
-  }
-  .sub-menu{
-    @apply flex flex-col gap-3 max-h-6 transition-all duration-200  overflow-hidden
-  }
-  .sub-menu--open{
-   @apply max-h-[400px] ease-in text-orange-300
-  }
-  .menu-mobail{
-    @apply py-2 px-2.5 rounded-md bg-orange-200/20 text-orange-300
-  }
-  .cart-mobail{
-    @apply fixed flex flex-col justify-between w-64 transition-all -left-64 duration-200 top-0 bottom-0 bg-white dark:bg-zinc-700 z-20 px-4 pt-5 pb-8
-  }
-  .cart-mobail--open{
-    @apply left-0
-  }
-  .nav-mobail{
-    @apply overflow-y-auto fixed w-64 transition-all -right-64 duration-200 top-0 bottom-0 bg-white dark:bg-zinc-700 z-20 px-4 py-3 
-  }
-  .nav-mobail--open{
-
-    @apply right-0
+  .circel-3 {
+    @apply w-[95px] h-[95px] border border-white/80;
+  
   }
 }
