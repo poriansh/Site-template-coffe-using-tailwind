@@ -17,7 +17,7 @@ module.exports = {
     container: {
       center: true,
       padding:{
-        default:"1rem",
+        DEFAULT:"1rem",
         lg:"0.625rem",
       },
     },
@@ -53,8 +53,8 @@ module.exports = {
         30: "7.5rem",
       },
       backgroundImage:{
-        "home-mobail":"url(../img/headerBgDesktop.webp)",
-        "home-desktop":"url(../img/headerBgMobile.webp)"
+        "home-mobail":"url(../img/headerBgMobile.webp)",
+        "home-desktop":"url(../img/headerBgDesktop.webp)"
 
       }
     },

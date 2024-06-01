@@ -8,7 +8,7 @@
     <link rel="icon" href="img/fav-icon.png" type="imgage/png" />
 </head>
 
-<body class="font-Dana bg-gray-100 dark:bg-zinc-800 h-[2000px]">
+<body class="font-Dana bg-gray-100 dark:bg-zinc-800">
     <!-- icon -->
     <svg class="hidden">
         <symbol id="shoping-cart" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -130,7 +130,7 @@
     <!-- header -->
     <header class="hidden z-50 md:block lg:w-[90%] bg-black/50 w-[95%] mx-auto h-24 rounded-3xl fixed top-9 right-0 left-0 py-5 px-5 backdrop-blur-[6px]">
         <!-- header-werraper -->
-        <div class="flex justify-between h-full">
+        <div class="flex justify-between">
             <!-- nav -->
             <nav class="flex items-center gap-9">
                 <!-- logo -->
@@ -139,7 +139,7 @@
                 </div>
                 <!-- menu -->
                 <ul
-                    class="flex xl:gap-9 lg:text-xl gap-4 text-gray-300 text-lg h-full child:leading-[56px] child-hover:text-orange-300 child:transition-all child:duration-200">
+                    class="flex xl:gap-9 lg:text-xl gap-4 text-gray-300 text-lg child:leading-[56px] child-hover:text-orange-300 child:transition-all child:duration-200">
                     <li class="">
                         <a class="font-Dana-medium text-orange-200" href="">صفحه اصلی</a>
                     </li>
@@ -276,7 +276,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="toggletheme" class="cursor-pointer">
+                    <div id="toggle-theme" class="cursor-pointer">
                         <svg class="w-8 h-8 dark:hidden">
                             <use href="#moon"></use>
                         </svg>
@@ -502,7 +502,7 @@
                         </svg>
                         ورود | ثبت‌نام
                     </a>
-                    <div id="toggletheme" class="flex items-center gap-2 dark:hidden">
+                    <div id="toggle-theme" class="flex items-center gap-2 dark:hidden">
                         <svg class="w-5 h-5">
                             <use href="#moon"></use>
                         </svg>
@@ -530,7 +530,7 @@
             <div class="container overflow-y-hidden relative h-full md:min-h-screen flex items-center justify-end">
                 <div class="text-white">
                     <h1 class="font-Moraba-bold text-2xl md:text-6xl/[62px]">قهوه عربیکا تانزانیا</h1>
-                    <h4 class="text-xl/[32px] md:text-5xl/[65px] font-Moraba mt-1">یک فنجان بالانس !</h4>
+                    <h2 class="text-xl/[32px] md:text-5xl/[65px] font-Moraba mt-1">یک فنجان بالانس !</h2>
                     <span class="block w-[100px] h-[1px] md:h-0.5 bg-orange-300 my-3"></span>
                     <p class="text-xs md:text-2xl max-w-[201px] md:max-w-[460px]">قطعا نام آشنای عربیکا را شنیده اید، عربیکا یکی از گونه های قهوه است که در نواحی مختلف کمربند قهوه کشت میشود.</p>
                 </div>
@@ -540,14 +540,29 @@
                     </div>
                 </div>
             </div>
-            <div class="cursor-pointer z-20  border-2 border-orange-300 rounded-full w-[30px] h-[30px] absolute bottom-0 left-0 right-0 mx-auto text-zinc-800 dark:text-white flex items-center justify-center translate-y-1/2">
+            <div class=" hidden md:flex-center cursor-pointer z-20  border-2 border-orange-300 rounded-full w-[30px] h-[30px] absolute bottom-0 left-0 right-0 mx-auto text-zinc-800 dark:text-white  translate-y-1/2">
                 <svg class="w-5 h-5">
                     <use href="#arrow-down"></use>
                 </svg>
             </div>
-            <svg class=" w-[100px] z-10 h-[22px] absolute bottom-0 left-0 right-0 mx-auto text-white dark:text-zinc-800">
+            <svg class=" w-[100px] z-10 h-[22px] absolute bottom-0 left-0 right-0 mx-auto text-white dark:text-zinc-800 hidden md:block">
                 <use href="#shape-home"></use>
             </svg>
+        </section>
+        <section class="product pt-8 lg:pt-48">
+            <div class="container section-title">
+                <div class="section-title-werraper">
+                    <h3 class="section-title__text">جدیدترین محصولات</h3>
+                    <h4 class="section-title__caption">فرآوری شده از دانه قهوه</h4>
+                </div>
+                <a href="" class="section-title-link">
+                    <span class="hidden md:inline-block">مشاهده همه محصولات</span>
+                    <span class="inline-block md:hidden">مشاهده همه</span>
+                    <svg class="w-5 h-5 ">
+                        <use href="#arrow-left"></use>
+                    </svg>
+                </a>
+            </div>
         </section>
     </main>
     <div class="overlay"></div>

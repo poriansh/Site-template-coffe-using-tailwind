@@ -1,4 +1,4 @@
-const toggletheme = document.querySelectorAll("#toggletheme");
+const toggletheme = document.querySelectorAll("#toggle-theme");
 const navmobail = document.querySelector(".nav-mobail");
 const submenumobail = document.querySelector(".sub-menu");
 const overlay = document.querySelector(".overlay");
