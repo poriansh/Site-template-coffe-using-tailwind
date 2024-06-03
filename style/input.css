@@ -130,7 +130,7 @@
       background: linear-gradient(rgba(243,244,246,0.65),rgba(243,244,246,0.65)),url('../img/body-bg.png');
       background-size: 100%;
       background-repeat: no-repeat;
-      height: 900px;
+      
 
     }
    }
@@ -151,6 +151,23 @@
   }
   .section-title-link {
     @apply text-base sm:text-xl text-orange-300 flex items-center gap-1
+  }
+  .category-banner__item{
+    @apply text-white h-[142px] md:h-[248px] flex flex-col gap-4 md:gap-7 justify-center rounded-2xl bg-no-repeat pr-7 md:pr-12 
+    
+  } 
+  .category-banner__item1{
+    
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(0, 0, 0, 0.1) 100%),url('../img/categories/category-left.jpg');
+    ;
+    background-size: cover;
+        
+  }
+  .category-banner__item2{
+
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 33.85%, rgba(0, 0, 0, 0.1) 100%),url('../img/categories/category-right.jpg');
+    ;
+    background-size: cover;
   }
   
   
