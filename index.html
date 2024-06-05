@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coffe shop</title>
     <link rel="stylesheet" href="style/app.css" />
+    <link rel="stylesheet" href="style/swiper.css" />
     <link rel="icon" href="img/fav-icon.png" type="imgage/png" />
 </head>
 
@@ -582,7 +583,7 @@
                         </svg>
                     </a>
                 </div>
-                <div class="mt-5 lg:mt-12 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-[14px] lg:gap-5">
+                <div class="mt-5 lg:mt-12 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-[14px] xl::gap-5">
                     <div class="relative p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-light">
                         <div class="flex w-32 h-32 lg:w-[260px] lg:h-[260px] mx-auto">
                             <img src="img/products/p1.png" alt="">
@@ -1030,41 +1031,434 @@
                 <div class="flex-center gap-[29px] md:gap-[65px] flex-wrap text-center">
                     <div class="w-[100px] md:w-[200px]">
                         <a href="">
-                            <img src="img/categories/category1.png" alt="">
+                            <img class="hover:scale-125 transition-all" src="img/categories/category1.png" alt="">
                         </a>
-                        <span class="text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">قهوه دمی و اسپرسو</span>
+                        <span
+                            class="inline-block mt-2.5 text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">قهوه
+                            دمی و اسپرسو</span>
                     </div>
                     <div class="w-[100px] md:w-[200px]">
                         <a href="">
-                            <img src="img/categories/category2.png" alt="">
+                            <img class="hover:scale-125 transition-all" src="img/categories/category2.png" alt="">
                         </a>
-                        <span class="text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">لوازم جانبی و تجهیزات</span>
+                        <span
+                            class=" inline-block mt-2.5text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">لوازم
+                            جانبی و تجهیزات</span>
                     </div>
                     <div class="w-[100px] md:w-[200px]">
                         <a href="">
-                            <img src="img/categories/category3.png" alt="">
+                            <img class="hover:scale-125 transition-all" src="img/categories/category3.png" alt="">
                         </a>
-                        <span class="text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">اسپرسو ساز</span>
+                        <span
+                            class="inline-block mt-2.5 text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">اسپرسو
+                            ساز</span>
                     </div>
                     <div class="w-[100px] md:w-[200px]">
                         <a href="">
-                            <img src="img/categories/category4.png" alt="">
+                            <img class="hover:scale-125 transition-all" src="img/categories/category4.png" alt="">
                         </a>
-                        <span class="text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">پک تستر قهوه</span>
+                        <span
+                            class="inline-block mt-2.5 text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">پک
+                            تستر قهوه</span>
                     </div>
                     <div class="w-[100px] md:w-[200px]">
                         <a href="">
-                            <img src="img/categories/category5.png" alt="">
+                            <img class="hover:scale-125 transition-all" src="img/categories/category5.png" alt="">
                         </a>
-                        <span class="text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">قهوه ترک</span>
+                        <span
+                            class="inline-block mt-2.5 text-sm md:text-xl font-Dana-bold text-zinc-700 dark:text-white">قهوه
+                            ترک</span>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="product-sale mt-10 md:mt-20">
+            <div class="container">
+                <div class="section-title items-end">
+                    <div class="section-title-werraper">
+                        <h3 class="section-title__text">محصولات پر فروش</h3>
+                        <h4 class="section-title__caption">پیشنهاد قهوه خور ها ...</h4>
+                    </div>
+                    <div class="flex gap-5">
+                        <button class="next">
+                            <svg class="w-5 h-5 md:w-[26px] md:h-[26px] rotate-180">
+                                <use href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                        <button class="prev">
+                            <svg class="w-5 h-5 md:w-[26px] md:h-[26px]">
+                                <use href="#arrow-left"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="swiper mt-5 md:mt-12">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="relative p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-light">
+                                <div class="flex w-32 h-32 lg:w-[260px] lg:h-[260px] mx-auto">
+                                    <img src="img/products/p1.png" alt="">
+                                </div>
+                                <h3
+                                    class="min-h-[60px] mt-2 line-clamp-2 dark:text-white lg:text-xl  text-zinc-700 font-Dana-medium text-sm/7">
+                                    قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم ...</h3>
+                                <div class="flex items-center gap-2">
+                                    <div class="text-teal-600 dark:text-emerald-500">
+                                        <span class="font-bold text-base lg:text-xl">154,000</span>
+                                        <span class="text-xs lg:text-sm">تومان</span>
+                                    </div>
+                                    <div class="text-gray-400 flex gap-1 items-center">
+                                        <span class="text-xs lg:text-xl line-through decoration-red-500">175,000</span>
+                                        <span class="hidden md:block lg:text-sm">تومان</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <button
+                                            class=" cursor-pointer w-[26px] h-[26px] lg:w-[36px] lg:h-[36px] bg-gray-100 dark:bg-zinc-800 dark:hover:bg-teal-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-teal-600 hover:text-white transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#shoping-cart"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="rounded-full  text-gray-400 hover:text-teal-600  transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#arrow-left-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-gray-300">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
 
+                                    </div>
+                                </div>
+                                <span
+                                    class="bg-orange-300 dark:text-zinc-700 text-white text-xs font-Dana-bold flex-center w-10 h-5 rounded-[100px] absolute top-2 right-2 lg:w-14 lg:h-[30px] lg:text-base lg:top-6 lg:right-6">12%</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="relative p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-light">
+                                <div class="flex w-32 h-32 lg:w-[260px] lg:h-[260px] mx-auto">
+                                    <img src="img/products/p2.png" alt="">
+                                </div>
+                                <h3
+                                    class="min-h-[60px] mt-2 line-clamp-2 dark:text-white lg:text-xl  text-zinc-700 font-Dana-medium text-sm/7">
+                                    قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم ...</h3>
+                                <div class="flex items-center gap-2">
+                                    <div class="text-teal-600 dark:text-emerald-500">
+                                        <span class="font-bold text-base lg:text-xl">154,000</span>
+                                        <span class="text-xs lg:text-sm">تومان</span>
+                                    </div>
+                                    <div class="text-gray-400 flex gap-1 items-center">
+                                        <span class="text-xs lg:text-xl line-through decoration-red-500">175,000</span>
+                                        <span class="hidden md:block lg:text-sm">تومان</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <button
+                                            class=" cursor-pointer w-[26px] h-[26px] lg:w-[36px] lg:h-[36px] bg-gray-100 dark:bg-zinc-800 dark:hover:bg-teal-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-teal-600 hover:text-white transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#shoping-cart"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="rounded-full  text-gray-400 hover:text-teal-600  transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#arrow-left-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-gray-300">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <span
+                                    class="bg-orange-300 dark:text-zinc-700 text-white text-xs font-Dana-bold flex-center w-10 h-5 rounded-[100px] absolute top-2 right-2 lg:w-14 lg:h-[30px] lg:text-base lg:top-6 lg:right-6">12%</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="relative p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-light">
+                                <div class="flex w-32 h-32 lg:w-[260px] lg:h-[260px] mx-auto">
+                                    <img src="img/products/p3.png" alt="">
+                                </div>
+                                <h3
+                                    class="min-h-[60px] mt-2 line-clamp-2 dark:text-white lg:text-xl  text-zinc-700 font-Dana-medium text-sm/7">
+                                    قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم ...</h3>
+                                <div class="flex items-center gap-2">
+                                    <div class="text-teal-600 dark:text-emerald-500">
+                                        <span class="font-bold text-base lg:text-xl">154,000</span>
+                                        <span class="text-xs lg:text-sm">تومان</span>
+                                    </div>
+                                    <div class="text-gray-400 flex gap-1 items-center">
+                                        <span class="text-xs lg:text-xl line-through decoration-red-500">175,000</span>
+                                        <span class="hidden md:block lg:text-sm">تومان</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <button
+                                            class=" cursor-pointer w-[26px] h-[26px] lg:w-[36px] lg:h-[36px] bg-gray-100 dark:bg-zinc-800 dark:hover:bg-teal-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-teal-600 hover:text-white transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#shoping-cart"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="rounded-full  text-gray-400 hover:text-teal-600  transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#arrow-left-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-gray-300">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <span
+                                    class="bg-orange-300 dark:text-zinc-700 text-white text-xs font-Dana-bold flex-center w-10 h-5 rounded-[100px] absolute top-2 right-2 lg:w-14 lg:h-[30px] lg:text-base lg:top-6 lg:right-6">12%</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="relative p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-light">
+                                <div class="flex w-32 h-32 lg:w-[260px] lg:h-[260px] mx-auto">
+                                    <img src="img/products/p5.png" alt="">
+                                </div>
+                                <h3
+                                    class="min-h-[60px] mt-2 line-clamp-2 dark:text-white lg:text-xl  text-zinc-700 font-Dana-medium text-sm/7">
+                                    قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم ...</h3>
+                                <div class="flex items-center gap-2">
+                                    <div class="text-teal-600 dark:text-emerald-500">
+                                        <span class="font-bold text-base lg:text-xl">154,000</span>
+                                        <span class="text-xs lg:text-sm">تومان</span>
+                                    </div>
+                                    <div class="text-gray-400 flex gap-1 items-center">
+                                        <span class="text-xs lg:text-xl line-through decoration-red-500">175,000</span>
+                                        <span class="hidden md:block lg:text-sm">تومان</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <button
+                                            class=" cursor-pointer w-[26px] h-[26px] lg:w-[36px] lg:h-[36px] bg-gray-100 dark:bg-zinc-800 dark:hover:bg-teal-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-teal-600 hover:text-white transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#shoping-cart"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="rounded-full  text-gray-400 hover:text-teal-600  transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#arrow-left-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-gray-300">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <span
+                                    class="bg-orange-300 dark:text-zinc-700 text-white text-xs font-Dana-bold flex-center w-10 h-5 rounded-[100px] absolute top-2 right-2 lg:w-14 lg:h-[30px] lg:text-base lg:top-6 lg:right-6">12%</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="relative p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-light">
+                                <div class="flex w-32 h-32 lg:w-[260px] lg:h-[260px] mx-auto">
+                                    <img src="img/products/p6.png" alt="">
+                                </div>
+                                <h3
+                                    class="min-h-[60px] mt-2 line-clamp-2 dark:text-white lg:text-xl  text-zinc-700 font-Dana-medium text-sm/7">
+                                    قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم ...</h3>
+                                <div class="flex items-center gap-2">
+                                    <div class="text-teal-600 dark:text-emerald-500">
+                                        <span class="font-bold text-base lg:text-xl">154,000</span>
+                                        <span class="text-xs lg:text-sm">تومان</span>
+                                    </div>
+                                    <div class="text-gray-400 flex gap-1 items-center">
+                                        <span class="text-xs lg:text-xl line-through decoration-red-500">175,000</span>
+                                        <span class="hidden md:block lg:text-sm">تومان</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <button
+                                            class=" cursor-pointer w-[26px] h-[26px] lg:w-[36px] lg:h-[36px] bg-gray-100 dark:bg-zinc-800 dark:hover:bg-teal-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-teal-600 hover:text-white transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#shoping-cart"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="rounded-full  text-gray-400 hover:text-teal-600  transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#arrow-left-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-gray-300">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <span
+                                    class="bg-orange-300 dark:text-zinc-700 text-white text-xs font-Dana-bold flex-center w-10 h-5 rounded-[100px] absolute top-2 right-2 lg:w-14 lg:h-[30px] lg:text-base lg:top-6 lg:right-6">12%</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="relative p-2 md:p-5 bg-white dark:bg-zinc-700 rounded-2xl shadow-light">
+                                <div class="flex w-32 h-32 lg:w-[260px] lg:h-[260px] mx-auto">
+                                    <img src="img/products/p7.png" alt="">
+                                </div>
+                                <h3
+                                    class="min-h-[60px] mt-2 line-clamp-2 dark:text-white lg:text-xl  text-zinc-700 font-Dana-medium text-sm/7">
+                                    قهوه ترک بن مانو مقدار 250 گرم خط دوم اسم ...</h3>
+                                <div class="flex items-center gap-2">
+                                    <div class="text-teal-600 dark:text-emerald-500">
+                                        <span class="font-bold text-base lg:text-xl">154,000</span>
+                                        <span class="text-xs lg:text-sm">تومان</span>
+                                    </div>
+                                    <div class="text-gray-400 flex gap-1 items-center">
+                                        <span class="text-xs lg:text-xl line-through decoration-red-500">175,000</span>
+                                        <span class="hidden md:block lg:text-sm">تومان</span>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center mt-4">
+                                    <div class="flex items-center gap-3">
+                                        <button
+                                            class=" cursor-pointer w-[26px] h-[26px] lg:w-[36px] lg:h-[36px] bg-gray-100 dark:bg-zinc-800 dark:hover:bg-teal-600 rounded-full flex items-center justify-center text-gray-400 hover:bg-teal-600 hover:text-white transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#shoping-cart"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="rounded-full  text-gray-400 hover:text-teal-600  transition-all ">
+                                            <svg class="w-4 h-4 lg:w-6 lg:h-6">
+                                                <use href="#arrow-left-right"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-gray-300">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+                                        <svg class="w-4 h-4 lg:w-6 lg:h-6 text-yellow-400">
+                                            <use href="#star"></use>
+                                        </svg>
+
+                                    </div>
+                                </div>
+                                <span
+                                    class="bg-orange-300 dark:text-zinc-700 text-white text-xs font-Dana-bold flex-center w-10 h-5 rounded-[100px] absolute top-2 right-2 lg:w-14 lg:h-[30px] lg:text-base lg:top-6 lg:right-6">12%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <div class="overlay"></div>
     <script src="script/app.js"></script>
+    <script src="script/swiper.js"></script>
+    <script>
+        const swiper = new Swiper(".swiper", {
+            slidesPerView: 2,
+            spaceBetween: 14,
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 14
+                },
+                // when window width is >= 480px
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 14
+                },
+                // when window width is >= 640px
+                1280: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
