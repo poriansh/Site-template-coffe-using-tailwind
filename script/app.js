@@ -8,16 +8,13 @@ submenumobail.addEventListener("click", function (e) {
   e.currentTarget.classList.toggle("sub-menu--open");
   document.querySelector("#arrow--active").classList.toggle("rotate-180");
 });
-overlay.addEventListener("click", function(e){
-e.currentTarget.classList.remove('overlay--open')
-  if(cartmobail.classList.contains("cart-mobail--open")){
-
+overlay.addEventListener("click", function (e) {
+  e.currentTarget.classList.remove("overlay--open");
+  if (cartmobail.classList.contains("cart-mobail--open")) {
     cartmobail.classList.remove("cart-mobail--open");
-
-  }else{
+  } else {
     navmobail.classList.remove("nav-mobail--open");
   }
-
 });
 
 closenav.addEventListener("click", Conditionnav);
@@ -34,7 +31,7 @@ function Conditionnav() {
 
 opencart.addEventListener("click", Conditioncart);
 closecart.addEventListener("click", Conditioncart);
-function Conditioncart(){
+function Conditioncart() {
   if (cartmobail.classList.contains("cart-mobail--open")) {
     cartmobail.classList.remove("cart-mobail--open");
     overlay.classList.remove("overlay--open");
