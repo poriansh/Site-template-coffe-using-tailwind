@@ -1127,6 +1127,41 @@ video {
   }
 }
 
+.service-line {
+  position: relative;
+}
+
+.service-line::after,
+  .service-line::before{
+  content: '';
+  position: absolute;
+  display: block;
+  inset: 0;
+  margin: auto;
+  background-color: #D1D5DB;
+}
+
+html.dark .service-line::after,html.dark .service-line::before{
+  background-color: rgba(255, 255, 255,10%);
+}
+
+.service-line::after{
+  width: 1px;
+  height: 100%;
+}
+
+.service-line::before{
+  width: 100%;
+  height: 1px;
+}
+
+@media all and (min-width: 1024px) {
+  .service-line::after,
+  .service-line::before{
+    content: none;
+  }
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1345,6 +1380,18 @@ video {
   margin-top: 0.625rem;
 }
 
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-3\.5 {
+  margin-top: 0.875rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -1359,6 +1406,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .box-border {
@@ -1573,6 +1624,10 @@ video {
   height: 72px;
 }
 
+.h-\[73px\] {
+  height: 73px;
+}
+
 .h-\[87px\] {
   height: 87px;
 }
@@ -1657,6 +1712,10 @@ video {
   width: 100px;
 }
 
+.w-\[109px\] {
+  width: 109px;
+}
+
 .w-\[130px\] {
   width: 130px;
 }
@@ -1689,12 +1748,24 @@ video {
   width: 41px;
 }
 
+.w-\[51\.1px\] {
+  width: 51.1px;
+}
+
+.w-\[66px\] {
+  width: 66px;
+}
+
 .w-\[71px\] {
   width: 71px;
 }
 
 .w-\[72px\] {
   width: 72px;
+}
+
+.w-\[75\.2px\] {
+  width: 75.2px;
 }
 
 .w-\[87px\] {
@@ -2348,6 +2419,10 @@ video {
 .gap-x-5 {
   -moz-column-gap: 1.25rem;
        column-gap: 1.25rem;
+}
+
+.gap-y-11 {
+  row-gap: 2.75rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -3308,6 +3383,11 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-sm\/6 {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
 .text-sm\/7 {
@@ -4380,6 +4460,10 @@ video {
     width: 90%;
   }
 
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
@@ -4469,6 +4553,11 @@ video {
     line-height: 26.8px;
   }
 
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
   .dark\:lg\:hover\:\[paint-order\:markers\]:hover:is(.dark *) {
     paint-order: markers;
   }
@@ -4481,6 +4570,10 @@ video {
 
   .xl\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:flex-row {
+    flex-direction: row;
   }
 
   .xl\:justify-between {
@@ -4515,5 +4608,9 @@ video {
   .xl\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .xl\:text-right {
+    text-align: right;
   }
 }
