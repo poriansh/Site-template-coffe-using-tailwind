@@ -148,7 +148,10 @@
     @apply text-zinc-700 font-Moraba text-base sm:text-3xl/[48px] dark:text-white;
   }
   .section-title-link {
-    @apply text-base sm:text-xl text-orange-300 flex items-center gap-1;
+    @apply text-base sm:text-xl text-orange-300 flex items-center gap-1  p-2 transition-all rounded-md;
+  }
+  .section-title-link:hover{
+    background-color: rgba(253, 186, 116,20%);
   }
   .category-banner__item {
     @apply text-white h-[142px] md:h-[248px] flex flex-col gap-4 md:gap-7 justify-center rounded-2xl bg-no-repeat pr-7 md:pr-12;
