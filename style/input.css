@@ -53,6 +53,10 @@
   .flex-center {
     @apply flex items-center justify-center;
   }
+  .left-text{
+    direction: ltr;
+    text-align: left;
+  }
 }
 
 @layer components {
@@ -204,5 +208,6 @@
     content: none;
    
   }
+  
 }
 }
