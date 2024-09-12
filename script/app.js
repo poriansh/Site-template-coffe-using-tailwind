@@ -62,9 +62,9 @@ toggletheme.forEach(function (item) {
 window.addEventListener("load", function () {
   if (localStorage.theme === "dark") {
     document.documentElement.classList.add("dark");
-    localStorage.setItem("theme", "dark");
+    // localStorage.setItem("theme", "dark");
   } else {
     document.documentElement.classList.remove("dark");
-    localStorage.theme = "light";
+    // localStorage.theme = "light";
   }
 });
